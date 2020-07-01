@@ -98,7 +98,7 @@ const startButton = document.getElementById('start');
 
 function loadQuestion(questionIndex) {
     let q = questions[questionIndex];
-    console.log((questionIndex + 1) + '. '+ q.question);
+    //console.log((questionIndex + 1) + '. '+ q.question);
     
     questionEl.textContent = (questionIndex + 1) + '. ' + q.question;
     opt1.textContent = q.a;

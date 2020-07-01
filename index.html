@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-  
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-    <h1 id = 'timer' >contain the timer</h1>
-   <button id = "srtQuiz">Start Quiz</button>
-   <button id = 'stop'>Stop</button>
-</div>
 
-    <script src="script.js"></script>
+<body>
+
+
+    <div class="container" id="quizContainer">
+        <div class="title">Coumputer quiz</div>
+        <button id='start'>Start quiz</button>
+        <h1></h1>
+        <div class="clear" id = 'clear'>
+            <div class="q-container">
+                <div id="questionEl" class="questionEl"></div>
+            </div>
+            <div class="opt-container">
+                <div class="row">
+                    <label class="option"><input type="radio" name="option" value="a"><span id="opt1"></span></label>
+                    <label class="option"><input type="radio" name="option" value="b"><span id="opt2"></span></label>
+                </div>
+                <div class="row">
+                    <label class="option"><input type="radio" name="option" value="c"><span id="opt3"></span></label>
+                    <label class="option"><input type="radio" name="option" value="d"><span id="opt4"></span></label>
+                </div>
+                <button id="nextButton" class="next-btn">Next Question</button>
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+    
+
+
+
+    <script src="data.js"></script>
 </body>
+
 </html>
