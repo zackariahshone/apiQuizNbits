@@ -4,31 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://requirejs.org/docs/release/2.3.6/r.js"></script>
     <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
-
+<body>  
+        <div class="container">
+            <div class="jumbotron">
+               <CENTER> <h1>the great computer quiz</h1></CENTER>
+            </div>
+        </div>
 
     <div class="container" id="quizContainer">
-        <div class="title">Coumputer quiz</div>
         <button id='start'>Start quiz</button>
-        <h1></h1>
-        <div class="clear" id = 'clear'>
-            <div class="q-container">
-                <div id="questionEl" class="questionEl"></div>
-            </div>
-            <div class="opt-container">
-                <div class="row">
-                    <label class="option"><input type="radio" name="option" value="a"><span id="opt1"></span></label>
-                    <label class="option"><input type="radio" name="option" value="b"><span id="opt2"></span></label>
+        <div class="comp-cue">
+
+            <div class="clear" id = 'clear'>
+                <div class="q-container">
+                    <div id="questionEl" class="questionEl"></div>
                 </div>
-                <div class="row">
-                    <label class="option"><input type="radio" name="option" value="c"><span id="opt3"></span></label>
-                    <label class="option"><input type="radio" name="option" value="d"><span id="opt4"></span></label>
+                <div class="opt-container">
+                    <div class="row">
+                        <label class="col"><input type="radio" name="option" value="a"><span id="opt1"></span></label>
+                        <label class="col"><input type="radio" name="option" value="b"><span id="opt2"></span></label>
+                    </div>
+                    <div class="row">
+                        <label class="col"><input type="radio" name="option" value="c"><span id="opt3"></span></label>
+                        <label class="col"><input type="radio" name="option" value="d"><span id="opt4"></span></label>
+                    </div>
+                    <button id="nextButton" class="next-btn">Next Question</button>
                 </div>
-                <button id="nextButton" class="next-btn">Next Question</button>
             </div>
         </div>
         <div id="result"></div>
