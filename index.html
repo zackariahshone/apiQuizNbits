@@ -18,7 +18,8 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 </head>
 
 <body>  
@@ -27,12 +28,13 @@
                <CENTER> <h1>the great computer quiz</h1></CENTER>
             </div>
         </div>
-
+        <div class="container">
+            <button id='start'>Start quiz</button>
+        </div>
     <div class="container" id="quizContainer">
-        <button id='start'>Start quiz</button>
         <div class="comp-cue">
 
-            <div class="clear" id = 'clear'>
+            <div class="clear" id = 'q_clear'>
                 <div class="q-container">
                     <div id="questionEl" class="questionEl"></div>
                 </div>
@@ -45,7 +47,8 @@
                         <label class="col"><input type="radio" name="option" value="c"><span id="opt3"></span></label>
                         <label class="col"><input type="radio" name="option" value="d"><span id="opt4"></span></label>
                     </div>
-                    <button id="nextButton" class="next-btn">Next Question</button>
+                    <!-- <button id="nextButton" class="next-btn">Next Question</button> -->
+                    <img src="./arrow.png" alt="arrow" id= "nextButton">
                 </div>
             </div>
         </div>

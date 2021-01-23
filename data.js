@@ -93,8 +93,8 @@ const nextButton = document.getElementById('nextButton');
 const resultCont = document.getElementById('result');
 const timer = document.getElementById('timer');
 const startButton = document.getElementById('start');
-
-
+const q_box = document.getElementById('q_clear');
+q_box.style.display='none';
 
 function loadQuestion(questionIndex) {
     let q = questions[questionIndex];
@@ -170,6 +170,7 @@ function stopQuiz() {
 
 startButton.addEventListener('click', function(){
     nextButton.style.display = 'block';
+    q_box.style.display='block';
     startButton.style.display = 'none';
     stopQuiz();
 });
